@@ -1,0 +1,31 @@
+version: '3'
+services:
+  mage:
+    image: mageai/mageai:latest
+    ports:
+      - "6789:6789"
+    volumes:
+      - ./mage_data:/home/src
+    environment:
+      - ENV=dev
+    restart: on-failure:5
+
+  spark:
+    image: docker.io/bitnami/spark:3.4.0
+    environment:
+      - SPARK_MODE=master
+    ports:
+      - '8080:8080'
+      - '7077:7077'
+    volumes:
+      - ./spark_data:/bitnami/spark/data
+
+  spark-worker:
+    image: docker.io/bitnami/spark:3.4.0
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://sparㅁk:7077
+    depends_on:
+      - spark
+    volumes:
+      - ./spark_data:/bitnami/spark/data
