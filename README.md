@@ -6,7 +6,7 @@ The Uber Data Analytics Dashboard is a comprehensive tool for analyzing New York
 
 | Figure 1. DAG Graph View | Figure 2. DAG Gantt View |
 |:--:|:--:|
-| <img src="./images/dashboard_overview.png" alt="dashboard overview" width="400" /><br><em>dashboard overview</em> | <img src="./images/realtime_analysis.png" alt="realtime analysis" width="400" /><br><em>real-time analysis</em> |
+| <img src="./images/dashboard_overview.png" alt="dashboard overview" width="400" /><br><em>dashboard overview</em> | <img src="./images/mage_etl_pipeline.png" alt="realtime analysis" width="400" /><br><em>real-time analysis</em> |
 
 ## Features
 
