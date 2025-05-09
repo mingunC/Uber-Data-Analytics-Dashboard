@@ -4,7 +4,7 @@
 The Uber Data Analytics Dashboard is a comprehensive tool for analyzing New York City taxi trip data. Built with Streamlit and powered by BigQuery, this dashboard provides real-time data analysis, SQL-based insights, and predictive analytics to derive actionable business intelligence from taxi trip patterns.
 
 
-| Figure 1. DAG Graph View | Figure 2. DAG Gantt View |
+| Figure 1. Dashboard overview | Figure 2. Mage etl pipeline |
 |:--:|:--:|
 | <img src="./images/dashboard_overview.png" alt="dashboard overview" width="400" /><br><em>dashboard overview</em> | <img src="./images/mage_etl_pipeline.png" alt="realtime analysis" width="400" /><br><em>real-time analysis</em> |
 
